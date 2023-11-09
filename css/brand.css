@@ -1,0 +1,242 @@
+ul {
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0; /* Safari/Chrome, other WebKit */ /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* MAin 1 header */ /* MAin 1 header */ /* MAin 1 header */ /* MAin 1 header */ /* MAin 1 header */
+.main1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.header {
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+}
+
+.homepage-menu {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10%;
+  height: 100%;
+}
+
+.logo-img {
+  height: 100%;
+}
+
+.navbar {
+  display: inline-flex;
+  gap: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  align-self: center;
+  color: black;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: medium;
+}
+
+.btn:hover {
+  color: #6CC7DB;
+}
+
+.getInTouch {
+  height: 40px;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 6px;
+  background-color: #6CC7DB;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  line-height: 40px;
+}
+.getInTouch:hover {
+  background-color: black;
+}
+
+.work-title {
+  display: flex;
+  margin-top: 50px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background: #ffffff;
+  height: 100%;
+  font-family: "Helvetica Neue LT W01_41488878";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+ul li {
+  margin: 0 0 24px;
+}
+
+.the-arrow {
+  width: 1px;
+  transition: all 0.2s;
+}
+.the-arrow.-left {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+.the-arrow.-left > .shaft {
+  width: 0;
+  background-color: #000000;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+  width: 0;
+  background-color: #000000;
+}
+.the-arrow.-left > .shaft:before {
+  transform: rotate(0);
+}
+.the-arrow.-left > .shaft:after {
+  transform: rotate(0);
+}
+.the-arrow.-right {
+  top: 3px;
+}
+.the-arrow.-right > .shaft {
+  width: 1px;
+  transition-delay: 0.2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+  width: 8px;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+.the-arrow.-right > .shaft:before {
+  transform: rotate(40deg);
+}
+.the-arrow.-right > .shaft:after {
+  transform: rotate(-40deg);
+}
+.the-arrow > .shaft {
+  background-color: #000000;
+  display: block;
+  height: 1px;
+  position: relative;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+  background-color: #000000;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0;
+}
+.the-arrow > .shaft:before {
+  transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+  transform-origin: bottom right;
+}
+
+.animated-arrow {
+  display: inline-block;
+  color: #000000;
+  font-size: 1.25em;
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+}
+.animated-arrow:hover {
+  color: #000000;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+  width: 64px;
+  transition-delay: 0.1s;
+  background-color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  width: 8px;
+  transition-delay: 0.1s;
+  background-color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+  transform: rotate(40deg);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  transform: rotate(-40deg);
+}
+.animated-arrow:hover > .main {
+  transform: translateX(17px);
+  transform: translateX(80px);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+  width: 0;
+  transform: translateX(200%);
+  transition-delay: 0;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  width: 0;
+  transition-delay: 0;
+  transition: all 0.1s;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+  transform: rotate(0);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  transform: rotate(0);
+}
+.animated-arrow > .main {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.animated-arrow > .main > .text {
+  margin: 0 16px 0 0;
+  line-height: 1;
+}
+.animated-arrow > .main > .the-arrow {
+  position: relative;
+}/*# sourceMappingURL=brand.css.map */
